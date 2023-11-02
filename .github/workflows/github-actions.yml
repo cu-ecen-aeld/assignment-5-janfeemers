@@ -5,6 +5,8 @@ on:
             - '*'
         branches:
             - '*'
+    pull_request:
+        branches: [ master ]
 jobs:
     full-test:
         container: cuaesd/aesd-autotest:assignment4-buildroot
